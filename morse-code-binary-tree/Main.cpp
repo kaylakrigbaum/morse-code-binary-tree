@@ -6,6 +6,13 @@
 
 using namespace std;
 
+/* This is under construction still but basically this is the bones of the TreeNode */
+struct TreeNode {
+	string letter;
+	TreeNode* left;
+	TreeNode* right;
+};
+
 /* This function takes a user's string and turns it into a series of dots (with each letter's dot and dashses separated by a space) */
 string encoder(map<string, string> letterCodes, string userString) {
 	string encodedString;
@@ -13,9 +20,6 @@ string encoder(map<string, string> letterCodes, string userString) {
 		string oneLetter;
 		if (userString[i] != ' ') {
 			oneLetter = userString[i];
-		}
-
-		else {
 			string oneCode = letterCodes[oneLetter];
 			encodedString += oneCode + ' ';
 			cout << "One code for " << oneLetter << " is: " << oneCode << endl;
@@ -84,7 +88,6 @@ int main() {
 			cout << "You have given invalid input " << endl;
 			break;
 	}
-
 
 	system("PAUSE");
 	return 0;

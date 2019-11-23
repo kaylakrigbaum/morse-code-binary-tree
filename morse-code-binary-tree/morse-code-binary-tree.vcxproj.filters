@@ -23,6 +23,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="morse.txt" />
+    <Text Include="morse.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -38,11 +38,6 @@ map<string, string> fileParser(ifstream& inFile) {
 	map<string, string> letterCodes; 
 	while (!inFile.eof()) {
 		inFile >> letter >> lineString;
-
-		/*while (inFile.peek() != '\n') {
-			inFile >> lineString;
-		}*/
-
 		letterCodes[letter] = lineString;
 		cout << "Letter:" << letter << endl;
 		cout << "String:" << lineString << endl;

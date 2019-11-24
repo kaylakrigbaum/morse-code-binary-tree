@@ -82,23 +82,35 @@ string decoder(string userString)
 
 	TreeNode* traverser = rootNode;
 
-
 	for (int i = 0; i < userString.size(); i++)
 	{
 		if (userString[i] == '.')
 		{
+			if (traverser->left == NULL)
+			{
+				return "String not in letter library";
+			}
+
 			traverser = traverser->left;
 		}
 
 		else
 		{
+			if (traverser->right == NULL)
+			{
+				return "String not in letter library";
+			}
+
 			traverser = traverser->right;
 		}
 	}
 
 	decodedString = traverser->letter;
-
 	return decodedString;
+
+	
+
+	
 }
 
 /* This function takes a file and parses through it and puts everything into a map with letter as key and dots/dash combo as value */
@@ -154,9 +166,6 @@ void buildTree()
 		}
 
 		traverser->letter = it->first;
-
-
-		cout << endl << endl;
 	}
 
 }

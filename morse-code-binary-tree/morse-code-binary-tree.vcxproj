@@ -23,7 +23,7 @@
     <ProjectGuid>{9DD1FF30-28DB-4AF2-85EA-770BF676045C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>morsecodebinarytree</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
